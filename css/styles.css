@@ -6,6 +6,8 @@ body{
     font-size: 1.2rem;
     line-height: 1.4em;
     margin: 0;
+    position: fixed;
+    width: 100%;
 }
 
 
