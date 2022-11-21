@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+body{
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+
+.header {
+   background: #333;
+   color: white;
+   padding: 2rem 0;
+
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.contenido{
+    margin-top: 8rem;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+
+
+
+.menu-icono{
+    display: none;
+}
+
+.navegation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.navegation ul li{
+    display: inline-block;
+}
+
+.navegation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navegation ul li a:hover {
+    background: #4a4a4a;
+}
+
+.main{
+    padding-top: 6rem;
+}
+
+header nav ul li:hover .children{
+    display: block;
+}
+
+header nav ul li .children{
+    display: none;
+    background: rgb(41, 41, 41);
+    position: absolute;
+    width: 20%;
+    z-index: 2000;
+}
+
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(81, 78, 78, 0.5);
+}
+
+header nav ul li .children li a{
+    display: block;
+}
+
+
+header nav ul li .children2 li a, header nav ul li .children3 li a, header nav ul li .children4 li a    {
+    padding-left: 40px;
+    background-color: #373535;
+    margin: 0;
+    border-radius:0;
+}
+
+header nav ul li .children2{
+    display: none;
+    background: rgb(41, 41, 41);
+    z-index: 2000;
+}
+
+header nav ul li .children2 li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(81, 78, 78, 0.5);
+}
+
+header nav ul li .children2 li a{
+    display: block;
+}
+
+
+header nav ul li:hover .children3{
+    display: block;
+}
+
+header nav ul li .children3{
+    display: none;
+    background: rgb(41, 41, 41);
+    z-index: 2000;
+}
+
+header nav ul li .children3 li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(81, 78, 78, 0.5);
+}
+
+header nav ul li .children3 li a{
+    display: block;
+}
+
+
+header nav ul li:hover .children4{
+    display: block;
+}
+
+header nav ul li .children4{
+    display: none;
+    background: rgb(41, 41, 41);
+    z-index: 2000;
+}
+
+header nav ul li .children4 li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(81, 78, 78, 0.5);
+}
+
+header nav ul li .children4 li a{
+    display: block;
+} 
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*? 10px = 1rem */
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--font);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales */
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--font);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem; 
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+/**utilidades**/
+.no-margin{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/* Sonsonate, La Libertad, San Miguel, Cuscatlán, Ahuachapán, La Paz, La Unión */
+
+/*! contenido **/
+
+.departamento{
+    height: 45rem;
+}
+
+.departamento__texto{
+    text-align: center;
+    color: black;
+    padding-top: 15rem;
+}
+
+.aboutGrid{
+
+    padding-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    padding-bottom: 5rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .aboutGrid{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+    }
+
+    .aboutText{
+
+        padding-top: 8rem;
+
+    }
+
+    .aboutText__cusca{
+        padding-top: 3rem;
+    }
+
+    .lista__texto{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+}
+
+.aboutHistory{
+    text-align: justify;
+    background-color: var(--colorFondo);
+    padding: 5rem 0 5rem 0;
+}
+
+.aboutHistory h3{
+    color: var(--colorTexto);
+}
+
+.lista__texto{
+    
+    color: var(--colorTexto);
+    
+}
+
+.aboutHistoryGrid{
+    margin: 0 5rem 0 5rem;
+}
+
+@media (min-width: 1100px) {
+    .aboutHistoryGrid{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+    }
+
+    .aboutHistoryGrid .imglista{
+        max-width: 85%;
+    }
+}
+
+.municipios,
+.turismo{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+
+
+@media (min-width: 1100px) {
+    .lista__municipios{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+
+        margin: 0 25rem 0 25rem;
+    }
+}
+
+.lista__municipios{
+    text-align: center;
+    
+}
+
+
+.contenido__turismo,
+.personajes{
+    text-align: justify;
+    padding-top: 5rem;
+    margin: 0 5rem 0 5rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .turismoGrid{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 2rem;
+    }
+
+    .turismoTexto{
+
+        padding-top: 10rem;
+
+    }
+}
+
+.turismoGrid{
+    margin: 0 5rem 0 5rem;
+
+}
+
+.turismoGrid:last-of-type{
+
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .personajeGrid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+
+    .turismoImg__cusca img{
+
+        width: 750px;
+        height: 550px;
+    }
+}
+
+.personajeGrid{
+    text-align: center;
+}
+
+.personajeGrid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgPersonaje img{
+
+    width: 350px;
+    height: 450px;
+}
+
+
+
+.imgPersonaje-Anita img{
+    
+    width: 450px;
+    height: 450px;
+}
+
+
+
+.footer{
+    width: 100%;
+    background-color: rgb(251, 248, 248);
+    padding: 4em 0 0 0;
+    margin-top: 0.5rem;
+    text-align: center;
+
+}
+
+.pie{
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.pie .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.g1 .box h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie .g1 .box p{
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+.pie .g1 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #2d3032;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie .g1 .redes a:hover{
+    color: rgb(135, 135, 144);
+}
+
+.pie .g2{
+    background-color: #29292a;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:767px){
+
+    .pie .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .menu-icono{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    
+    .navegation{
+     width: 100%;
+     margin-top: 1rem;
+    }
+
+    .navegation ul{
+     display: none ;
+    }
+    .navegation ul.show{
+        display: block;
+        height: 650px;
+    }
+
+    .menu-showing{
+        margin-top: 6rem;
+    }
+    
+    .navegation ul li{
+        display: block;
+    }
+    
+    .navegation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+    .navegation ul li a:hover {
+        background: #4a4a4a;
+    }
+
+    header nav ul li .children{
+        width: 100%;
+        position: relative;
+    }
+    
+    header nav ul li .children li a{
+        margin-left: 20px;
+    }
+    
+    header nav ul li:hoover .children {
+        display: none;
+    }
+
+
+  
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #b910836e;
+    color: white;
+}
+.fa-facebook{
+    background: #0c69b1;
+    color: white;
+}
+.fa-github{
+    background: white;
+    color: black;
+
+}
+
+.titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sub{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sub-1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.4em;
+
+}
+
+.form{
+    top: -100rem;
+}
+
+.form-control{
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;  
+}
+form textarea{
+    width: 20em;;
+}
+
